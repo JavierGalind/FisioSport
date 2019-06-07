@@ -9,7 +9,7 @@
       <div class="col-md-8">
           <div class="form-group">
             <label>Descripcion</label>
-            <textarea name="descripcion_cita" id="editor" rows="8" cols="80" class="form-control">{{$cita->descripcion_cita}}</textarea>
+            <textarea name="descripcion_cita" id="editor" rows="8" cols="80" class="form-control" required>{{$cita->descripcion_cita}}</textarea>
           </div>
           <div class="form_group">
             <button class="btn btn-primary">Guardar</button>

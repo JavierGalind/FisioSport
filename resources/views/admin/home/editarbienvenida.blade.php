@@ -12,11 +12,11 @@
 
           <div class="form-group required autocomplete">
             <label>Titulo</label>
-            <input type="text" name="titulo_bienvenida" value="{{$bien->titulo_bienvenida}}" class="form-control">
+            <input type="text" name="titulo_bienvenida" value="{{$bien->titulo_bienvenida}}" class="form-control" required>
           </div>
           <div class="form-group">
             <label>Descripcion</label>
-            <textarea name="descripcion_bienvenida" id="editor" rows="8" cols="80" class="form-control">{{$bien->descripcion_bienvenida}}</textarea>
+            <textarea name="descripcion_bienvenida" id="editor" rows="8" cols="80" class="form-control" required>{{$bien->descripcion_bienvenida}}</textarea>
           </div>
       </div>
       <div class="col-md-4">
@@ -33,7 +33,7 @@
                 </div>
                 <!-- /.input group -->
                 <label>Imagen de Bienvenida</label>
-                <input type="file" name="imagen_bienvenida" value="{{$bien->imagen_bienvenida}}" class="form-control">
+                <input type="file" name="imagen_bienvenida" value="{{$bien->imagen_bienvenida}}" class="form-control" accept="image/*" required>
               </div>
               <div class="form_group">
                 <button class="btn btn-primary">Guardar Cambios</button>

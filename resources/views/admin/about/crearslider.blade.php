@@ -9,7 +9,7 @@
       <div class="col-md-8">
         <div class="form-group">
                 <label>Imagen del Slider</label>
-                <input type="file" name="imagen_slider" class="form-control">
+                <input type="file" name="imagen_slider" class="form-control" accept="image/*" required>
                 </div>
                 <div class="form_group">
                 <button class="btn btn-primary">Guardar</button>

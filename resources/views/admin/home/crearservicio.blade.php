@@ -10,16 +10,16 @@
 
           <div class="form-group required autocomplete">
             <label>Titulo</label>
-            <input type="text" name="titulo_servicio" placeholder="Ingresa el titulo" class="form-control">
+            <input type="text" name="titulo_servicio" placeholder="Ingresa el titulo" class="form-control" required>
           </div>
           <div class="form-group">
             <label>Descripcion</label>
-            <textarea name="descripcion_servicio" id="editor" rows="8" cols="80" class="form-control"></textarea>
+            <textarea name="descripcion_servicio" id="editor" rows="8" cols="80" class="form-control" required></textarea>
           </div>
           <div class="form-group">
        
                 <label>Imagen del Servicio</label>
-                <input type="file" name="imagen_servicio" class="form-control">
+                <input type="file" name="imagen_servicio" class="form-control" accept="image/*" required>
               </div>
               <div class="form_group">
                 <button class="btn btn-primary">Guardar</button>

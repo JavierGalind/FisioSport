@@ -12,11 +12,11 @@
 
           <div class="form-group required autocomplete">
             <label>Titulo</label>
-            <input type="text" name="titulo_blog" value="{{$blog->titulo_blog}}" class="form-control">
+            <input type="text" name="titulo_blog" value="{{$blog->titulo_blog}}" class="form-control" required>
           </div>
           <div class="form-group">
             <label>Descripcion</label>
-            <textarea name="descripcion_blog" id="editor" rows="8" cols="80" class="form-control">{{$blog->descripcion_blog}}</textarea>
+            <textarea name="descripcion_blog" id="editor" rows="8" cols="80" class="form-control" required>{{$blog->descripcion_blog}}</textarea>
           </div>
       </div>
       <div class="col-md-4">
@@ -33,7 +33,7 @@
                 </div>
                 <!-- /.input group -->
                 <label>Imagen del Blog</label>
-                <input type="file" name="imagen_blog" value="{{$blog->imagen_blog}}" class="form-control">
+                <input type="file" name="imagen_blog" value="{{$blog->imagen_blog}}" class="form-control" accept="image/*" required>
               </div>
               <div class="form_group">
                 <button class="btn btn-primary">Guardar Cambios</button>

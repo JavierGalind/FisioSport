@@ -16,7 +16,7 @@ Auth::routes();
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/about', function () {
+Route::get('/abouts', function () {
     return view('about');
 });
 Route::get('/services', function () {

@@ -9,7 +9,7 @@
       <div class="col-md-8">
           <div class="form-group">
             <label>Descripcion</label>
-            <textarea name="descripcion_cita" id="editor" rows="8" cols="80" class="form-control"></textarea>
+            <textarea name="descripcion_cita" id="editor" rows="8" cols="80" class="form-control" required></textarea>
           </div>
           <div class="form_group">
             <button class="btn btn-primary">Guardar</button>

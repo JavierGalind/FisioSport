@@ -29,8 +29,8 @@
             <li class="{{ request()->is('/') ? 'active' : '' }}">
               <a href="{{ url('/') }}">Inicio</a> 
             </li>
-            <li class="{{ request()->is('about') ? 'active' : '' }}">
-              <a href="{{ url('about') }}">¿Quienes Somos?</a> 
+            <li class="{{ request()->is('abouts') ? 'active' : '' }}">
+              <a href="{{ url('abouts') }}">¿Quienes Somos?</a> 
             </li> 
             <!--<li><a href="demo-categories/medical/about.html"> <i class="fa fa-angle-down fa-indicator"></i> </a> 
             <ul class="drop-down-multilevel left-side">

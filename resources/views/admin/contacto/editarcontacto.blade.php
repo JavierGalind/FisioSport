@@ -11,15 +11,15 @@
 
           <div class="form-group required autocomplete">
             <label>Direccion</label>
-            <input type="text" name="direccion_contacto" value="{{$contacto->direccion_contacto}}" class="form-control">
+            <input type="text" name="direccion_contacto" value="{{$contacto->direccion_contacto}}" class="form-control" required>
           </div>
           <div class="form-group required autocomplete">
             <label>Telefono</label>
-            <input type="text" name="telefono_contacto" value="{{$contacto->telefono_contacto}}" class="form-control">
+            <input type="text" name="telefono_contacto" value="{{$contacto->telefono_contacto}}" class="form-control" required minlength="10" maxlength="10">
           </div>
           <div class="form-group required autocomplete">
             <label>Correo Electronico</label>
-            <input type="text" name="correo_contacto" value="{{$contacto->correo_contacto}}" class="form-control">
+            <input type="email" name="correo_contacto" value="{{$contacto->correo_contacto}}" class="form-control" required>
           </div>
           <div class="form_group">
             <button class="btn btn-primary">Guardar Cambios</button>
