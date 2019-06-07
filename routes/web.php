@@ -11,21 +11,11 @@
 |
 */
 
-Auth::routes();
-
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/abouts', function () {
-    return view('about');
-});
-Route::get('/services', function () {
-    return view('services');
-});
-Route::get('/contact', function () {
-    return view('contact');
-});
-
+Auth::routes(['register' => false]);
+Route::get('/contact', 'PageController@contact')->name('/cpntact');
+Route::get('/abouts', 'PageController@abouts')->name('/abouts');
+Route::get('/', 'PageController@index')->name('/');
+////////////////////////////////////////////////////////
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/bienvenida', 'BienvenidaController@bienvenida')->name('bienvenida');
 Route::get('/crearbienvenida','BienvenidaController@crearbienvenida')->name('crearbienvenida');

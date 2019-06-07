@@ -4,7 +4,7 @@
 <div class="container">
         <div class="col-md-8">
                <h1>Blogs</h1>
-               <a href="{{route('crearblog')}}" class="btn btn-info">CREAR UN BLOG</a>
+              
                <table class="table table-dark">
                        <thead>
                          <tr>
@@ -18,7 +18,7 @@
                        <tbody>
                         @foreach ($blog as $blo)
                         <tr>
-                               <th scope="row">1</th>
+                               <th scope="row">{{$blo->id_blog}}</th>
                                <td>{{$blo->titulo_blog}}</td>
                                <td>{{$blo->descripcion_blog}}</td>
                                <td><img src="img/{{$blo->imagen_blog}}" alt="" width="200" height="200"></td>
@@ -29,6 +29,7 @@
                         @endforeach   
                        </tbody>
                      </table>
+                     {!!$blog->render()!!}
         </div>
     </div>
 @endsection

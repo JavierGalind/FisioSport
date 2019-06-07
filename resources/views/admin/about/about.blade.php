@@ -4,7 +4,7 @@
 <div class="container">
   <div class="col-md-8">
     <h1>General</h1>
-    <a href="{{route('crearabout')}}" class="btn btn-info">CREAR ¿QUIENES SOMOS?</a>
+    
     <table class="table">
       <thead class="thead-dark">
         <tr>

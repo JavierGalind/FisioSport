@@ -4,7 +4,7 @@
 <div class="container">
   <div class="col-md-8">
     <h1>Contacto</h1>
-    <a href="{{route('crearcontacto')}}" class="btn btn-info">CREAR DATOS DE CONTACTO</a>
+    
     <table class="table">
       <thead class="thead-dark">
         <tr>

@@ -4,7 +4,7 @@
 <div class="container">
   <div class="col-md-8">
     <h1>Servicios</h1>
-    <a href="{{route('crearservicio')}}" class="btn btn-info">CREAR SERVICIO</a>
+    
     <table class="table">
       <thead class="thead-dark">
         <tr>
@@ -30,6 +30,7 @@
         @endforeach
       </tbody>
     </table>
+    {!!$servicio->render()!!}
   </div>
 </div>
 @endsection

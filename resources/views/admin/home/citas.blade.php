@@ -4,7 +4,7 @@
   <div class="container">
     <div class="col-md-8">
       <h1>CITAS</h1>
-      <a href="{{route('crearcita')}}" class="btn btn-info">CREAR CONTENIDO DE CITAS</a>
+     
       <table class="table">
         <thead class="thead-dark">
           <tr>

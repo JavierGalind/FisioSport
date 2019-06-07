@@ -4,7 +4,7 @@
 <div class="container">
   <div class="col-md-8">
     <h1>Slider</h1>
-    <a href="{{route('crearslider')}}" class="btn btn-info">CREAR IMAGEN DEL SLIDER</a>
+    
     <table class="table">
       <thead class="thead-dark">
         <tr>
@@ -25,6 +25,7 @@
         @endforeach
       </tbody>
     </table>
+    {!!$slider->render()!!}
   </div>
 </div>
 @endsection

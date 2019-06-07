@@ -21,19 +21,9 @@ appointment -->
         <div class="appointment-bg bg-overlay-theme-90 parallax" data-jarallax='{"speed": 0.6}' style="background-image: url(/images/06.jpg);">
            <div class="row clearfix">
              <div class="col-lg-6">
-               <span class="text-white">¿Necesitas Ayuda?</span>
-               <h3 class="text-white mb-20">¡Agenda una cita!</h3>
-               <p class="text-white">Si lo prefiere puede comunicarse con nosotros para elegir una fecha y hora por teléfono. </p>
-               <p class="text-white">Le atenderemos con gusto en el número. </p>
-                <div class="contact-box mt-30 sm-mb-30">
-                    <div class="contact-icon">
-                        <i class="fa fa-plus-square text-white"></i>
-                    </div>
-                    <div class="contact-info">
-                        <h5 class="text-white">(722) 000-00-00</h5>
-                        <span class="text-white">Lunes-Viernes 8:00-20:00 hrs</span>
-                    </div>
-                </div>
+               @foreach ($cita as $cit)
+                   {!!$cit->descripcion_cita!!}
+               @endforeach
              </div>
              <div class="col-lg-3 col-md-6">
                <div class="contact-form border-form full-width clearfix">
@@ -85,26 +75,25 @@ appointment -->
  <section class="page-section-pt sm-pb-30">
   <div class="container">
     <div class="row">
+      @foreach ($bienvenida as $bien)
       <div class="col-lg-8">
-        <div class="mb-60 sm-mb-30">
-            <h2>Bienvenidos a Fisio Sport Klinik</h2>
-            <p class="mt-30"></p>
-            <p>Somos una clínica especializada en rehabilitación física. Ayudamos a nuestros pacientes a maximizar su calidad de vida, reincorporándolos a sus actividades diarias de manera rápida, con atención personalizada.</p>
-          
-            <p><b>Filosofía:</b> En Fisiosportklinik nos preocupamos por la integridad física de nuestros pacientes, brindamos nuestros servicios con personal altamente capacitado y con equipo tecnológico de punta. Nuestro mayor interés es la recuperación total de nuestros pacientes.</p>
-
-            <p><b>Misión:</b>Acompañar a nuestros pacientes a lo largo de su tratamiento con plena responsabilidad profesional y humana.</p>
-
-            <p><b>Visión:</b> Ser el referente en rehabilitación física en la región del Valle de Toluca con un enfoque 100% humano.</p>
-          
-        </div>
+          <div class="mb-60 sm-mb-30">
+          <h2>{{$bien->titulo_bienvenida}}</h2>
+              <p class="mt-30"></p>
+              {!!$bien->descripcion_bienvenida!!}
+            
+          </div>
+        
       </div>
       <div class="col-md-4">
-        <div class="clearfix">
-          <img class="bottom-img img-fluid mx-auto" src="{{ asset('images/about2.jpg') }}" alt="">
+          <div class="clearfix">
+            <img class="bottom-img img-fluid mx-auto" src="img/{{$bien->imagen_bienvenida}}" alt="">
+          </div>
         </div>
-      </div>
-    </div>
+    
+      @endforeach
+     
+          </div>
   </div>
 </section>
 

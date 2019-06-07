@@ -8,7 +8,7 @@ class ServicioController extends Controller
 {
     public function index()
     {
-      $servicio= Servicio::all();
+      $servicio= Servicio::orderBy('id','DESC')->paginate('2');
       return view('admin.home.servicios',compact('servicio'));
     }
     public function crearservicio()

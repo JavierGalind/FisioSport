@@ -38,6 +38,9 @@ contact -->
       </div>
     </div>
     <div class="row">
+      @foreach ($contacto as $con)
+          
+     
       <div class="col-lg-4 col-md-6 col-sm-6 sm-mb-30">
         <div class="feature-text square theme-icon">
           <div class="feature-icon">
@@ -45,7 +48,7 @@ contact -->
           </div>
           <div class="feature-info">
             <h5 class="text-back">Dirección</h5>
-            <p>Torre Médica II de Especialidades, Av. Lic. Benito Juárez García 341 NTE, La Purisima, 52140 Metepec, Méx.</p>
+            <p>{{$con->direccion_contacto}}</p>
           </div>
         </div>
       </div>
@@ -56,7 +59,7 @@ contact -->
           </div>
           <div class="feature-info">
             <h5 class="text-back">Teléfono</h5>
-            <p>(722) 232 40 77</p>
+            <p>{{$con->telefono_contacto}}</p>
           </div>
         </div>
       </div>
@@ -67,10 +70,11 @@ contact -->
           </div>
           <div class="feature-info">
             <h5 class="text-back">Correo Electrónico</h5>
-            <p>contacto@fisiosportklinik.mx</p>
+            <p>{{$con->correo_contacto}}</p>
           </div>
         </div>
       </div>
+      @endforeach
     </div>
   </div>
 </section>
@@ -116,15 +120,13 @@ appointment  -->
         </form>
         <div id="ajaxloader" style="display:none"><img class="mx-auto mt-30 mb-30 d-block" src="images/pre-loader/loader-02.svg" alt=""></div>
       </div>
+      @foreach ($cita as $cit)
+          
+   
       <div class="col-lg-4 col-md-4 col-sm-6 xs-mt-30">
-        <h4 class="text-blue">Agenda tu cita</h4>
-        <p>No esperes más y agenda una cita con nuestros especialistas.</p>
-        <ul class="addresss-info"> 
-          <li class="mt-20"><i class="fa fa-map-marker"></i> <p>Torre Médica II de Especialidades, Av. Lic. Benito Juárez García 341 NTE, La Purisima, 52140 Metepec, Méx.</p> </li>
-          <li><i class="fa fa-phone"></i> <a href="tel:7042791249"> <span>(722) 232 40 77</span> </a> </li>
-          <li><i class="fa fa-envelope-o"></i>contacto@fisiosportklinik.mx</li>
-        </ul>
+        <p>{!!$cit->descripcion_cita!!}</p>
       </div>
+      @endforeach
     </div>
   </div>  
 </section>

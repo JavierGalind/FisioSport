@@ -4,7 +4,7 @@
  <div class="container">
      <div class="col-md-8">
             <h1>Bienvenida</h1>
-            <a href="{{route('crearbienvenida')}}" class="btn btn-info">CREAR BIENVENIDA</a>
+            
             <table class="table table-dark">
                     <thead>
                       <tr>
